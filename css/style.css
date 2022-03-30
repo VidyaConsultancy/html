@@ -1,0 +1,218 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    font-size: 80px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+}
+#second-heading {
+    font-size: 30px;
+    color: blueviolet;
+}
+.heading {
+    color: green;
+}
+/* descendent/child selector */
+section p {
+    color: red;
+    font-size: 20px;
+}
+/* direct descendent/child selector */
+section > p {
+    color: blue;
+    font-size: 18px;
+}
+section + p {
+    color: limegreen;
+    font-size: 22px;
+}
+section ~ p {
+    color: darkorange;
+    font-size: 25px;
+}
+h3 {
+    color: yellow;
+    font-size: 40px;
+}
+#third-heading {
+    color: blue;
+}
+.heading {
+    color: red;
+}
+section h3 {
+    color: turquoise;
+}
+.headings h3 {
+    color: teal;
+}
+section .heading {
+    color: chocolate;
+}
+section #third-heading {
+    color: magenta;
+}
+.headings .heading {
+    color: gray;
+}
+h1, h2, h3 {
+    font-weight: bold;
+}
+ul > li, ol > li, h1, h3, h5 {
+    color: coral;
+}
+[type="text"] {
+    height: 36px;
+}
+[type="email"] {
+    height: 24px;
+}
+[type="password"] {
+    height: 50px;
+}
+a[href="https://google.com"] {
+    text-decoration: underline;
+    font-size: 26px;
+    color: blue;
+}
+[title] {
+    font-style: italic;
+}
+[title*="lorem"] {
+    color: crimson;
+}
+[title^="lorem"] {
+    font-family: cursive;
+    color: green;
+}
+[title$="lorem"] {
+    font-family: monospace;
+    font-size: 20px;
+    color: tomato;
+}
+[title~="lore"] {
+    font-family: fantasy;
+    font-size: 50px;
+    color: red;
+}
+[title|="lore"] {
+    font-family: fantasy;
+    font-size: 20px;
+    color: red;
+}
+
+/* Pseudo Elements */
+.special-para::first-letter {
+    font-size: 50px;
+    font-family: fantasy;
+}
+.special-line::first-line {
+    background-color: green;
+}
+abbr::before {
+    content: '';
+    background-color: black;
+    color: white;
+}
+abbr::after {
+    content: '';
+}
+
+/* Pseudo classess */
+.contact-paras {
+    line-height: 1.6;
+}
+.contact-paras :first-child {
+    font-family: cursive;
+    font-size: 20px;
+}
+.contact-paras :last-child {
+    color: chartreuse;
+    font-size: 20px;
+}
+.contact-paras p:nth-child(2) {
+    background-color: blanchedalmond;
+    color: black;
+}
+.contact-paras p:nth-last-child(2) {
+    background-color: blanchedalmond;
+    color: black;
+}
+tr:nth-last-child(4n) {
+    background-color: gray;
+}
+
+.contact-paras section:last-of-type {
+    padding: 50px 10px 30px 20px;
+    border: 3px double white;
+    margin: 10px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url('/images/freelance-desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 
+        0px 0px 12px 0px black,
+        10px 10px 14px 0px white,
+        20px 20px 18px 0px black;
+}
+
+.row h3 {
+    margin: 0 0 20px;
+}
+.row::after,
+.content::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.row .col {
+    width: 33.33%;
+    float: left;
+}
+.round-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+}
+
+.flex-row {
+    background-color: ivory;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px 20px;
+}
+.flex-row > .col {
+    background-color: black;
+    flex: 1 1 30%;
+}
+.flex-row > .col:first-child {
+    order: 3;
+}
+.flex-row > .col:last-child {
+    order: 1;
+}
+.flex-row > .col:nth-child(2) {
+    justify-self: flex-end;
+    align-self: center;
+    order: 2;
+}
+.flex-row > .col:nth-child(3) {
+    order: 0;
+}

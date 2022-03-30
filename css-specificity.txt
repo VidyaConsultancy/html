@@ -1,0 +1,16 @@
+(first, second, third)
+(id, class, element)
+body { (0, 0, 1)
+
+}
+.classname { (0, 1, 0)
+
+}
+#id { (1, 0, 0)
+
+}
+body h1 (0, 0, 2)
+body .classname (0, 1, 1)
+body #id (1, 0, 1)
+.class1 .class2 (0, 2, 0)
+.class1 #id (1, 1, 0)
