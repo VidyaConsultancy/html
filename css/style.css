@@ -216,3 +216,28 @@ tr:nth-last-child(4n) {
 .flex-row > .col:nth-child(3) {
     order: 0;
 }
+.box {
+    width: 500px;
+    height: 150vh;
+    background-color: #000;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    margin: 20px;
+}
+.box-inner {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.box-second {
+    width: 200px;
+    height: 100px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
