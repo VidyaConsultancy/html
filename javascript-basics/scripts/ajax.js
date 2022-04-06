@@ -14,7 +14,10 @@ function fetchProducts() {
         const title = document.createElement("h3");
         title.classList.add("product__title");
         title.innerHTML = obj.title;
+        const img = document.createElement('img');
+        img.src = obj.imageUrl;
         product.appendChild(title);
+        product.appendChild(img)
         products.appendChild(product);
       });
       document.body.append(products);
